@@ -6,10 +6,10 @@
     404 =>  'sorry, that page doesn\'t<br />exist or has been moved',
     500 =>  "sorry,<br />the server failed to process this page"
   );
-  if ( !array_key_exists( $_GET["code"] , $description ) ) {
-    $code = '500';
-  } else {
+  if ( array_key_exists( $_GET["code"] , $description ) ) {
     $code = $_GET["code"];
+  } else {
+  	$code = '500';
   }
 ?>
 <!doctype html>
