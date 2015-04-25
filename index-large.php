@@ -1,5 +1,4 @@
 <?php
-  $code = $_GET["code"];
   $number = array('oh!', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine');
   $description = array (
     401 =>  "of something you cannot see<br />because you are not logged in",
@@ -7,11 +6,16 @@
     404 =>  'sorry, that page doesn\'t<br />exist or has been moved',
     500 =>  "of something that cannot be shown<br />because the server failed to process it"
   );
+  if ( !array_key_exists( $_GET["code"] , $description ) ) {
+    $code = '500';
+  } else {
+    $code = $_GET["code"];
+  }
 ?>
 <!doctype html>
 <html>
   <head>
-    <title>Error <?php echo $_GET["code"]?></title>
+    <title>Error <?=$code?></title>
     <meta name="robots" content="noindex">
     <style type="text/css">
       @font-face{
