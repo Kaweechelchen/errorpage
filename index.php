@@ -15,7 +15,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Error <?=$code?></title>
+    <title>
+    	<?php
+	    	echo strtoupper(
+	    					$number[ $code[ 0 ] ]
+	    	. ' ' . $number[ $code[ 1 ] ]
+	    	. ' ' . $number[ $code[ 2 ] ]
+	    	);
+    	?>
+    </title>
     <meta name="robots" content="noindex">
     <style type="text/css">
       @font-face{
