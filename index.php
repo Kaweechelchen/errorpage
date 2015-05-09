@@ -28,11 +28,11 @@
     <style type="text/css">
       @font-face{
         font-family:'GothamBold';
-        src:url("gothambold.otf") format("opentype");
+        src:url("/gothambold.otf") format("opentype");
       }
       @font-face{
         font-family:'GothamLight';
-        src:url("gothamlight.otf") format("opentype");
+        src:url("/gothamlight.otf") format("opentype");
       }
       body {
         font-family:"GothamBold";
