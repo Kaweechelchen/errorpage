@@ -94,8 +94,8 @@
     <div id="main">
       <div class="code">
         <p><?=$number[ $code[ 0 ] ]?></p>
-        <p <? if ( $code[ 2 ] != 0 )  echo 'class="small"' ?>><?=$number[ $code[ 1 ] ]?></p>
-        <p <? if ( $code[ 2 ] == 0 )  echo 'class="small"' ?>><?=$number[ $code[ 2 ] ]?></p>
+        <p <?php if ( $code[ 2 ] != 0 )  echo 'class="small"' ?>><?=$number[ $code[ 1 ] ]?></p>
+        <p <?php if ( $code[ 2 ] == 0 )  echo 'class="small"' ?>><?=$number[ $code[ 2 ] ]?></p>
       </div>
       <div class="description light">
       <?=$description[ $code ]?>
