@@ -102,7 +102,7 @@
       </div>
       <div class="line"></div>
       <div class="description light">
-        <a target="_blank" href="https://twitter.com/syn2cat">contact us</a><br />if you think this is a mistake
+        <a target="_blank" href="https://twitter.com/Kaweechelchen">contact me</a><br />if you think this is a mistake
       </div>
     </div>
   </body>
