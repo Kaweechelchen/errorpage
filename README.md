@@ -1,2 +1,2 @@
 # errorpage
-@syn2cat's new errorpage
+a nice web error page
